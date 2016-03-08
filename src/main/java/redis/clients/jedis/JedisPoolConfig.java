@@ -6,8 +6,8 @@ public class JedisPoolConfig extends GenericObjectPoolConfig {
   public JedisPoolConfig() {
     // defaults to make your life with connection pool easier :)
     setTestWhileIdle(true);
-    setMinEvictableIdleTimeMillis(60000);
-    setTimeBetweenEvictionRunsMillis(30000);
+    setMinEvictableIdleTimeMillis(6000);
+    setTimeBetweenEvictionRunsMillis(3000);
     setNumTestsPerEvictionRun(-1);
   }
 }

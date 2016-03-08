@@ -27,6 +27,7 @@ public class ConnectionTest extends Assert {
   public void checkUnkownHost() {
     client.setHost("someunknownhost");
     client.connect();
+    
   }
 
   @Test(expected = JedisConnectionException.class)
